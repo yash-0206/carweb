@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Universe</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+        }
+
+        /* Navbar */
+        header {
+            background: linear-gradient(90deg, #ff4d00, #ff9500);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAvST7_J6qtT82vZoH4rbI1ee-0Vdxr3VDzg&s") no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content {
+            background: rgba(0,0,0,0.6);
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 12px 30px;
+            background: #ff4d00;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #ff9500;
+        }
+
+        /* Cars Section */
+        .cars {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .cars h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .car-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .car-card {
+            background: #1e293b;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .car-card h3 {
+            margin: 15px 0 5px;
+        }
+
+        .car-card p {
+            padding: 0 15px 20px;
+            font-size: 14px;
+            color: #cbd5f5;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>🚗 Cars Universe</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Models</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Cars Universe</h2>
+            <p>Explore the world of luxury, speed & innovation</p>
+            <button>Explore Cars</button>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section class="cars">
+        <h2>Popular Cars</h2>
+        <div class="car-container">
+
+            <div class="car-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9qWYeWm-KKJMDMxxDttDMPkJ_aeqjHprPzQ&s">
+                <h3>Rolls Royce</h3>
+                <p>High performance, speed and stunning design.</p>
+            </div>
+
+            <div class="car-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bquC5Vykk4IKyn1ruq1W6TgtNVF9n4Iu0w&s">
+                <h3>Deffender</h3>
+                <p>Comfort, elegance and premium interiors.</p>
+            </div>
+
+            <div class="car-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDN15ZCreYF5OHOaGBm4-zG5A7vot7EX0_eA&s">
+                <h3>Lamborgani</h3>
+                <p>Powerful, spacious and perfect for adventures.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Cars Universe | Designed with Yash ❤️
+    </footer>
+
+</body>
+</html>
